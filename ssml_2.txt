@@ -1,0 +1,19 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="zh-CN">
+	<voice name="C002xiaosi_mor-stylesNeural_pro1Neural">			
+		
+		<mstts:express-as style="chat">
+			
+			<prosody volume="90" rate="1.1" pitch="+5Hz">不行不行不行</prosody>
+			
+		</mstts:express-as>
+
+		
+		<mstts:express-as style="cheerful">
+			
+			<prosody volume="90" rate="1.1" pitch="+5Hz">薬をのみます,txt:をのみます</prosody>
+			
+		</mstts:express-as>
+
+		
+    </voice>
+</speak>
