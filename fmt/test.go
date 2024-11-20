@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"net/url"
 )
 
 func main2() {
@@ -22,6 +23,9 @@ type MyStruct struct {
 }
 
 func main() {
+	str := "你好"
+	eco := url.PathEscape(str)
+	fmt.Println(eco)
 	s := "{\"name\":\"xiaomin\",\"age\":18}"
 	a := MyStruct{}
 	json.Unmarshal([]byte(s), &a)
