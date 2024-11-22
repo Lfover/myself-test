@@ -61,13 +61,13 @@ func main8() {
 }
 func main9() {
 	// 定义一个字符串数组
-	stringsArray := []string{"apple", "banana", "orange"}
+	//stringsArray := []string{"apple", "banana", "orange"}
 
 	// 定义一个要判断的字符串
 	searchString := "banana"
 
 	// 使用strings.Index函数找到字符串在数组中的索引
-	index := strings.Index(stringsArray, searchString)
+	index := strings.Index("stringsArray", searchString)
 
 	// 输出结果
 	if index != -1 {
