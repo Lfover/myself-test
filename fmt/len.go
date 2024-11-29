@@ -15,7 +15,7 @@ func main3() {
 	p := Person{Name: "Alice", Age: 20}
 	fmt.Println(p)
 	bytes, _ := json.Marshal(p)
-	fmt.Println("Byte count:", len(bytes))
+	fmt.Println("Byte count:1", len(bytes))
 	fmt.Println("Character count:", len(string(bytes)))
 }
 func main() {
