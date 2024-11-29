@@ -30,7 +30,7 @@ func main() {
 		default:
 
 			for a := range ch {
-				fmt.Println("get", a)
+				fmt.Println("get111", a)
 			}
 
 		case b := <-ch1:
