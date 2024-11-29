@@ -25,7 +25,7 @@ func init() {
 
 }
 
-func main() {
+func main1() {
 	config := feature.FabConfig{
 		Env: feature.TestEnv,
 	}

@@ -7,17 +7,34 @@ import (
 
 func main() {
 	wg := &sync.WaitGroup{}
-	wg.Add(3)
-	ch := make(chan int)
-	for i := 0; i < 1; i++ {
-		ch <- i
-		fmt.Println("send", i)
-	}
-	close(ch)
-	for i := 0; i < 1; i++ {
+	wg.Add(1) // 假设我们只需要等待一个goroutine完成
+
+	ch := make(chan int, 10)
+	ch1 := make(chan int)
+
+	// 启动一个goroutine来发送数据
+	go func() {
+		for i := 0; i < 3; i++ {
+			ch <- i
+			fmt.Println("send", i)
+		}
+		close(ch)
+		wg.Done()
+	}()
+
+	// 等待goroutine完成
+	wg.Wait()
+
+	for i := 0; i < 3; i++ {
 		select {
-		case i := <-ch:
-			fmt.Println("get", i)
+		default:
+
+			for a := range ch {
+				fmt.Println("get", a)
+			}
+
+		case b := <-ch1:
+			fmt.Println(b)
 		}
 	}
 }
