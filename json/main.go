@@ -34,7 +34,7 @@ type Intention struct {
 	Intention      string `bson:"intention" json:"intention" mapstructure:"intention"`
 }
 
-func main() {
+func main1() {
 
 	var aa MarkResult
 	str := "{\\\"asr_result\\\":{\\\"judgment\\\":null,\\\"text\\\":\\\"\\\"},\\\"asr_semantic\\\":{\\\"judgment\\\":null},\\\"hear_xiaosi\\\":null}"
@@ -43,5 +43,26 @@ func main() {
 	fmt.Println(aa.AsrResult.Judgment)
 	fmt.Println(aa.AsrResult.Text)
 	fmt.Println(aa.HearXiaosi)
+
+}
+
+type A struct {
+	A int `bson:"a" json:"a" mapstructure:"a"`
+	B int `bson:"b" json:"b" mapstructure:"b"`
+	C int `bson:"c" json:"c" mapstructure:"c"`
+}
+type C struct {
+	E A      `bson:"e" json:"e" mapstructure:"e"`
+	B string `bson:"b" json:"b" mapstructure:"b"`
+}
+
+func main() {
+
+	var aa C
+	str := "{\"b\":\"12\"}"
+	err := json.Unmarshal([]byte(str), &aa)
+	if err != nil {
+		fmt.Println(err)
+	}
 
 }
