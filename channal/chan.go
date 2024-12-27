@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-func main() {
+func main2() {
 	wg := &sync.WaitGroup{}
 	wg.Add(1) // 假设我们只需要等待一个goroutine完成
 
