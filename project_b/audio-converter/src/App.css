@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.upload-container {
+  margin: 20px;
+  padding: 20px;
+  border: 2px dashed #61dafb;
+  border-radius: 10px;
+}
+
+.audio-player {
+  margin-top: 20px;
+}
+
+audio {
+  margin-top: 10px;
+  width: 300px;
+}
+
+input[type="file"] {
+  padding: 10px;
+}
+
+input[type="file"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
