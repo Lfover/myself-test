@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+
 	p := pubsub.NewPublisher(100*time.Millisecond, 10)
 	defer p.Close()
 
