@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main1() {
 	// 定义两个时间字符串
 	timeStr1 := "2024-01-10 21:14:45"
 	timeStr2 := "2024-11-04 14:26:42"

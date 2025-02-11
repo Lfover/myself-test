@@ -19,7 +19,7 @@ func isChineseString(s string) bool {
 	return count > total/2
 }
 
-func main() {
+func main23() {
 	testStrings := []string{"Hello 世界", "你好，世界！", "English only", "只有中文", "中英混合 Hello 世界"}
 
 	for _, str := range testStrings {
