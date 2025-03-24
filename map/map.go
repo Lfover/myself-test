@@ -8,6 +8,8 @@ import (
 )
 
 func main() {
+	s := make(map[string]string)
+	fmt.Println(len(s))
 	n := len("26个英文字母是：A、B、C、D、E、F、G、H、T/J/KL")
 	fmt.Println(n)
 	tst := "我就是<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xmlns:mstts=\"https://www.w3.org/2001/mstts\" xml:lang=\"en-US\">\n<voice name=\"en-GB-MaisieNeural\"><mstts:express-as style=\"cheerful\">this is a  \n<phoneme alphabet=\"ipa\" ph=\"nihao\">book</phoneme>\n \n</mstts:express-as></voice></speak>"
