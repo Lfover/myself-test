@@ -22,7 +22,7 @@ type MyStruct struct {
 	Age  string
 }
 
-func main() {
+func main5() {
 	str := "你好"
 	eco := url.PathEscape(str)
 	fmt.Println(eco)

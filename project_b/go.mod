@@ -1,6 +1,8 @@
 module project_b
 
-go 1.20
+go 1.21.0
+
+toolchain go1.23.9
 
 require (
 	github.com/gin-contrib/cors v1.7.3

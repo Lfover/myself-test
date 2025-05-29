@@ -5,9 +5,9 @@ import (
 	"strings"
 )
 
-func main() {
+func main1111() {
 	s := "艮（\u000E\uF8F5瘙\u0001楁\u000F）代表山、"
-	s1 := "艮（\uF8F5瘙楁）代表山、\n"
+	//s1 := "艮（\uF8F5瘙楁）代表山、\n"
 	reportData := strings.ReplaceAll(s, " ", "")
 	fmt.Println(reportData)
 	str1 := []string{"apple", "banana", "cherry"}
